@@ -17,10 +17,7 @@
         "ongr/router-bundle": "~0.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.1",
-        "squizlabs/php_codesniffer": "~2.0",
-        "ongr/ongr-strict-standard": "~2.1",
-        "tedivm/stash-bundle": "0.3.*"
+        "phpunit/phpunit": "~4.1"
     },
     "autoload": {
         "psr-4": { "ONGR\\ContentBundle\\": "" }
