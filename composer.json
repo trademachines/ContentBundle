@@ -13,11 +13,11 @@
     "repositories": [
         {
             "type": "git",
-            "url": "git@github.com:trademachines/ElasticsearchBundle.git"
+            "url": "https://github.com/trademachines/ElasticsearchBundle.git"
         },
         {
             "type": "git",
-            "url": "git@github.com:trademachines/RouterBundle.git"
+            "url": "https://github.com/trademachines/RouterBundle.git"
         }
     ],
     "require": {
