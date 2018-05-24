@@ -121,8 +121,7 @@ class ContentExtensionTest extends \PHPUnit_Framework_TestCase
             $fragmentHandlerMock,
             $router,
             $strategy,
-            $this->getManager([$document]),
-            'AcmeTestBundle:Content'
+            $this->getManager([$document])
         );
 
         $extension->snippetFunction(1);
