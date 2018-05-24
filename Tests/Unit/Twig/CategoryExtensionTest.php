@@ -110,7 +110,10 @@ class CategoryExtensionTest extends WebTestCase
         $categoryDocument = new \stdClass();
 
         /** @var Twig_Environment|\PHPUnit_Framework_MockObject_MockObject $environment */
-        $environment = $this->getMock('Twig_Environment', ['render']);
+        $environment = $this->getMockBuilder('Twig_Environment')
+            ->disableOriginalConstructor()
+            ->setMethods(['render'])
+            ->getMock();
         $environment->expects($this->once())
             ->method('render')
             ->with(
@@ -149,7 +152,10 @@ class CategoryExtensionTest extends WebTestCase
         $categoryDocument = new \stdClass();
 
         /** @var \Twig_Environment|\PHPUnit_Framework_MockObject_MockObject $environment */
-        $environment = $this->getMock('Twig_Environment', ['render']);
+        $environment = $this->getMockBuilder('Twig_Environment')
+            ->disableOriginalConstructor()
+            ->setMethods(['render'])
+            ->getMock();
         $environment->expects($this->once())
             ->method('render')
             ->with(
